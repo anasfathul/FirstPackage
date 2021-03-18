@@ -9,18 +9,24 @@ The goal of FirstPackage is to ...
 
 ## Installation
 
-You can install the released version of FirstPackage from [CRAN](https://CRAN.R-project.org) with:
+You can install the Demo package using the following line below:
+
 
 ``` r
-install.packages("FirstPackage")
+#library(devtools)
+devtools::install_github("anasmuhd/FirstPackage", build_vignette = TRUE, build_opts = c())
+library(FirstPackage)
 ```
 
-## Example
+## Use
 
-This is a basic example which shows you how to solve a common problem:
+This package contain vignette that will elaborate the usage of all functions.
+You can view the vignette by using the following code:
 
 ``` r
-library(FirstPackage)
-## basic example code
+# Use this to view the vignette in the Demo HTML help
+help(package = "FirstPackage", help_type = "html")
+# Use this to view the vignette as an isolated HTML file
+utils::browseVignettes(package = "FirstPackage")
 ```
 

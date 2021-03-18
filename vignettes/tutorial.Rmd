@@ -1,5 +1,6 @@
 ---
-title: "Project 3: FirstPackage Tutorial"
+title: "FirstPackage Tutorial"
+author: "Muhammad Anas"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Project 3: FirstPackage Tutorial}
