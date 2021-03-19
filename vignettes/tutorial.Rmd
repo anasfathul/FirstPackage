@@ -68,6 +68,7 @@ my_t.test(my_gapminder$lifeExp, "two.sided", 60)
 # Explanation
 
 ```{r}
+# change
 my_model <- my_lm(lifeExp ~ gdpPercap * continent, 
                 my_gapminder[c("lifeExp", "gdpPercap", "continent")])
 my_model
@@ -76,6 +77,7 @@ my_model
 # Elaboration
 
 ```{r}
+# change
 lm_fit <- lm(lifeExp ~ gdpPercap * continent, 
              my_gapminder[c("lifeExp", "gdpPercap", "continent")])
 mod_fits <- fitted(lm_fit)
@@ -95,6 +97,7 @@ ggplot(my_df, aes(x = fitted, y = actual)) +
 # This function ....
 # Input ....
 ```{r}
+# change
 my_penguins <- my_penguins %>% drop_na()
 covariates <- my_penguins[c("bill_length_mm", "bill_depth_mm", 
                             "flipper_length_mm", "body_mass_g")]
