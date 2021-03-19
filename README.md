@@ -3,7 +3,7 @@
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/anasmuhd/FirstPackage/workflows/R-CMD-check/badge.svg)](https://github.com/anasmuhd/FirstPackage/actions)
-[![codecov](https://codecov.io/gh/anasmuhd/FirstPackage/branch/master/graph/badge.svg?token=f8510527f913)](https://codecov.io/gh/anasmuhd/FirstPackage)
+[![codecov](https://codecov.io/gh/anasmuhd/FirstPackage/branch/main/graph/badge.svg?token=QAQXCQGE0F)](https://codecov.io/gh/anasmuhd/FirstPackage)
 <!-- badges: end -->
 
 The FirstPackage is a package consist of statistical analysis function for the
