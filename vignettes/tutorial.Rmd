@@ -1,9 +1,9 @@
 ---
-title: "FirstPackage Tutorial"
+title: "Project 3: Demo Tutorial"
 author: "Muhammad Anas"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Project 3: FirstPackage Tutorial}
+  %\VignetteIndexEntry{Demo Tutorial}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -16,5 +16,24 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(FirstPackage)
+library(Demo)
 ```
+
+### Introduction
+- This package consist of 4 statistical function that developed through the course STAT 302 in University of Washington. The package can be install by the following line of code:
+```{r setup}
+library(magrittr)
+library(dplyr)
+library(mypracticepackage)
+library(kableExtra)
+library(ggplot2)
+```
+
+```{r, eval = FALSE}
+devtools::install_github("anasmuhd/Demo", build_vignette = TRUE, build_opts = c())
+```
+
+### my_t.test
+- my_t.test function will evaluate all hypothesis (less, greater, two side) of the data $lifeExp$ from $my\_gapminder$
+
+
