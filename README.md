@@ -3,9 +3,11 @@
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/anasmuhd/FirstPackage/workflows/R-CMD-check/badge.svg)](https://github.com/anasmuhd/FirstPackage/actions)
+[![codecov](https://codecov.io/gh/anasmuhd/FirstPackage/branch/master/graph/badge.svg?token=0JW1T3BHTI)](https://codecov.io/gh/anasmuhd/FirstPackage)
 <!-- badges: end -->
 
-The goal of FirstPackage is to ...
+The FirstPackage is a package consist of statistical analysis function for the
+course STAT302 in University of Washington. The functions are my_t.test, my_lm, my_knn_cv, and my_rf_cv.
 
 ## Installation
 
