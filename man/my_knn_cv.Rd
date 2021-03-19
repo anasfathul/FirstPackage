@@ -2,31 +2,33 @@
 % Please edit documentation in R/my_knn_cv.R
 \name{my_knn_cv}
 \alias{my_knn_cv}
-\title{The knn cv function.}
+\title{k-nearest neighbors cross validation method}
 \usage{
 my_knn_cv(train, cl, k_nn, k_cv)
 }
 \arguments{
-\item{formula}{an object class as a symbolic description of the
-model to be fitted.}
+\item{train}{input data frame.}
 
-\item{data}{input data frame.}
+\item{cl}{true class value of your training data.}
+
+\item{k_nn}{integer representing the number of neighbors.}
+
+\item{k_cv}{integer representing the number of folds.}
 }
 \value{
-a table similar to coefficient table of lm()
+a list that contain objects;
+*class: a vector of the predicted class $\hat{Y}_{i}$ for all observations
+*cv_err: a numeric with the cross-validation misclassification error
 }
 \description{
-This function is used to fit linear model and carry out linear regression.
+This function predict output class \code{species} using covariates \code{bill_length_mm},
+\code{bill_depth_mm}, \code{flipper_length_mm}, and \code{body_mass_g}. We will
+be using a 5-fold cross validation to test whether it is working or not.
 }
 \examples{
-formula <- mpg ~ hp + wt
-data <- mtcars
-my_lm(formula, data)
-
+my_knn_cv(data_p[, -1], data_p[, 1], 5, 5)
 
 }
-\keyword{inference,}
-\keyword{linear}
-\keyword{model,}
-\keyword{prediction.}
-\keyword{regression,}
+\keyword{cross}
+\keyword{prediction,}
+\keyword{validation.}

@@ -1,19 +1,21 @@
-#' The knn cv function.
+#' K-nearest neighbors cross validation method
 #'
-#' This function is used to fit linear model and carry out linear regression.
+#' This function predict output class \code{species} using covariates \code{bill_length_mm},
+#' \code{bill_depth_mm}, \code{flipper_length_mm}, and \code{body_mass_g}. We will
+#' be using a 5-fold cross validation to test whether it is working or not.
 #'
-#' @param formula an object class as a symbolic description of the
-#'  model to be fitted.
-#' @param data input data frame.
-#' @keywords regression, linear model, inference, prediction.
+#' @param train input data frame.
+#' @param cl true class value of your training data.
+#' @param k_nn integer representing the number of neighbors.
+#' @param k_cv integer representing the number of folds.
+#' @keywords prediction, cross validation.
 #'
-#' @return a table similar to coefficient table of lm()
+#' @return a list that contain objects;
+#' *class: a vector of the predicted class $\hat{Y}_{i}$ for all observations
+#' *cv_err: a numeric with the cross-validation misclassification error
 #'
 #' @examples
-#' formula <- mpg ~ hp + wt
-#' data <- mtcars
-#' my_lm(formula, data)
-#'
+#' my_knn_cv(data_p[, -1], data_p[, 1], 5, 5)
 #'
 #' @export
 my_knn_cv <- function(train, cl, k_nn, k_cv) {
