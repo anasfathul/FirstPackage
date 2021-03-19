@@ -44,7 +44,7 @@ $$\alpha = 0.05$$
 
 # Test 1
 ```{r}
-data("my_gapminder")
+data(my_gapminder)
 my_t.test(my_gapminder$lifeExp, "less", 60)
 
 ```
