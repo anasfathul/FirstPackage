@@ -2,7 +2,7 @@
 % Please edit documentation in R/my_knn_cv.R
 \name{my_knn_cv}
 \alias{my_knn_cv}
-\title{The knn cv function}
+\title{The knn cv function.}
 \usage{
 my_knn_cv(train, cl, k_nn, k_cv)
 }

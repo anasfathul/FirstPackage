@@ -1,4 +1,4 @@
-#' The knn cv function
+#' The knn cv function.
 #'
 #' This function is used to fit linear model and carry out linear regression.
 #'

@@ -21,7 +21,6 @@
 #' my_t.test(as.numeric(flip_coin), alternative = "greater", mu = p)
 #'
 #' @export
-
 my_t.test <- function(x, alternative, mu) {
 
   # calculate standard error

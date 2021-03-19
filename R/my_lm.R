@@ -16,7 +16,6 @@
 #'
 #'
 #' @export
-
 my_lm <- function(formula, data) {
   # Extract model
   mat_X <- model.matrix(formula, data)
