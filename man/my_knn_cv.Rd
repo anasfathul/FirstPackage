@@ -2,7 +2,7 @@
 % Please edit documentation in R/my_knn_cv.R
 \name{my_knn_cv}
 \alias{my_knn_cv}
-\title{k-nearest neighbors cross validation method}
+\title{K-nearest neighbors cross validation method}
 \usage{
 my_knn_cv(train, cl, k_nn, k_cv)
 }
