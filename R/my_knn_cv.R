@@ -40,7 +40,7 @@ my_knn_cv <- function(train, cl, k_nn, k_cv) {
     # record the prediction and miscalculation
     classy[fold == i] <- knn(x_train, x_test, y_train, k_nn)
     check <- suppressWarnings(as.numeric(cl[inds == i]))
-    if (check != class[inds]) {
+    if (check != classy[inds]) {
       prob_attr <- prob_attr + length(check)
     }
   }
