@@ -1,6 +1,6 @@
 ---
 title: "Project 3: FirstPackage Tutorial"
-author: "Muhammad Anas"
+author: "Muhammad Anas collaborated with Hadi Nazirool"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{FirstPackage Tutorial}
