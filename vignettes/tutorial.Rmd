@@ -3,7 +3,7 @@ title: "Project 3: FirstPackage Tutorial"
 author: "Muhammad Anas"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Demo Tutorial}
+  %\VignetteIndexEntry{FirstPackage Tutorial}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -44,7 +44,7 @@ $$\alpha = 0.05$$
 
 # Test 1
 ```{r}
-data(my_gapminder)
+data("my_gapminder")
 my_t.test(my_gapminder$lifeExp, "less", 60)
 
 ```
@@ -123,7 +123,7 @@ err_df
 ### my_rf_cv
 
 ```{r}
-data(my_penguins)
+# data(my_penguins)
 my_penguins <- my_penguins %>% drop_na()
 
 # create a list to label the number of folds
